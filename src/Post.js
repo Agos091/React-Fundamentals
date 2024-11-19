@@ -3,9 +3,9 @@ function Post(props) {
   return (
     <>
       <article>
-        <strong>{props.Post.title}</strong>
+        <strong>{props.post.title}</strong>
         <br />
-        <small>{props.Post.subTitle}</small>
+        <small>{props.post.subTitle}</small>
       </article>
       <br />
     </>
