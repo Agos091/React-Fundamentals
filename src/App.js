@@ -1,12 +1,18 @@
 import React from "react";
-
-const category = "Salve";
+import Post from "./Post";
 
 function App() {
   return (
     <>
-      <h1>First Component </h1>
-      <h2>{category}</h2>
+      <h1>Agos React blog </h1>
+      <h2> Post off the week</h2>
+      <hr />
+      <Post
+        post={{
+          title: "Title",
+          subTitle: "Subtitle",
+        }}
+      ></Post>
     </>
   );
 }
