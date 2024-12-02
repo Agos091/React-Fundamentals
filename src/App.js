@@ -21,6 +21,9 @@ function App() {
       },
     ]);
   }
+  function handleRemovePost(postId) {
+    setPosts((prevState) => prevState.filter((post) => post.id !== postId));
+  }
   return (
     <>
       <Header Header title="Agos blog">
@@ -33,10 +36,13 @@ function App() {
       {posts.map((post) => (
         <Post
           key={post.id}
+          id={post.id}
           likes={post.likes}
+          onRemove={handleRemovePost}
           post={{
             title: post.title,
             subTitle: post.subTitle,
+            id: post.id,
           }}
         ></Post>
       ))}
