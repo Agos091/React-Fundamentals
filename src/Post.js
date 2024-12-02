@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+
 function Post(props) {
   return (
     <>
@@ -11,4 +13,11 @@ function Post(props) {
     </>
   );
 }
+Post.propTypes = {
+  likes: PropTypes.number.isRequired,
+  post: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.string.isRequired,
+  }).isRequired,
+};
 export default Post;

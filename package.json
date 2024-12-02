@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/Agos091/React-Fundamentals.git",
-  "author": "Agos Dalcin Rufino <agos.dalcin@martinellilabs.com.br>",
+  "author": "Agos Dalcin Rufino <agos.dalcin@gmail.com.br>",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
@@ -18,8 +18,10 @@
     "babel-loader": "^9.2.1",
     "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.6.3",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "uuid": "^11.0.3",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
